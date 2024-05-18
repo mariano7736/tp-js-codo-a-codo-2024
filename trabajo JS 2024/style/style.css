@@ -1,7 +1,7 @@
 html {
     height: 100%;
     box-sizing: border-box;
-    font-family: 'Futura Std', sans-serif;  
+    font-family: 'Futura Std', sans-serif;
 
 }
 
@@ -23,16 +23,21 @@ main {
     padding-top: 32px;
 }
 
-
+.logo {
+    
+    width: 100px;
+    border-radius: 100%;
+    margin: 5px 0 8px 10px;
+}
 
 .banner {
-    
-    background-image:url(/img/cakesdiamond.jpg);
+
+    background-image: url(/img/cakesdiamond.jpg);
     background-size: 300px;
     height: 250px;
     background-attachment: fixed;
-    background-position-x: center; 
-    background-repeat: no-repeat; 
+    background-position-x: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -41,11 +46,10 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 95px;
     margin-bottom: 10px;
-    background-color: aliceblue;
     padding: 10px;
-    margin-top: 30px;
+
 }
 
 .slider-frame {
@@ -124,6 +128,7 @@ main {
     }
 
 }
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -138,8 +143,8 @@ main {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    text-align:left;
+    padding: 5px 70px;
     text-decoration: none;
     font-size: 22px;
 }
@@ -157,15 +162,17 @@ main {
 .topnav .icon {
     display: none;
 }
+
 .social {
     width: 35px;
-    display:flex;
+    display: flex;
 }
 
 @media screen and (max-width: 576px) {
     .topnav a:not(:first-child) {
         display: none;
     }
+
     .topnav a.icon {
         float: right;
         display: block;
@@ -177,6 +184,7 @@ main {
     .topnav a:not(:first-child) {
         display: none;
     }
+
     .topnav a.icon {
         float: right;
         display: block;
@@ -191,11 +199,13 @@ main {
     .topnav.responsive {
         position: relative;
     }
+
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     .topnav.responsive a {
         float: none;
         display: block;
@@ -209,12 +219,14 @@ main {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    position: relative; 
+    position: relative;
     margin: 20px;
     padding: 10px;
 }
 
-.scroll-left, .scroll-right {                 /*hasta aca funciona maso*/
+.scroll-left,
+.scroll-right {
+    /*hasta aca funciona maso*/
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
@@ -239,7 +251,8 @@ main {
 
 
 .container .card {
-    flex: 0 0 auto; /* Evita que las tarjetas se estiren */
+    flex: 0 0 auto;
+    /* Evita que las tarjetas se estiren */
     width: 250px;
     margin: 20px;
 }
@@ -262,6 +275,7 @@ main {
     position: absolute;
     z-index: 1;
     width: 90%;
+    top: 55%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -285,18 +299,18 @@ main {
     overflow: hidden;
 }
 
-.texto-animado > div {
+.texto-animado>div {
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: .3s ease all;
+    transition: .6s ease all;
 }
 
-.texto-animado > div.animacion {
+.texto-animado>div.animacion {
     transform: translateY(-100px);
 }
 
-.texto-animado > div span {
+.texto-animado>div span {
 
     font-size: 100px;
     font-weight: normal;
@@ -308,7 +322,8 @@ main {
     position: absolute;
     top: 100px;
 }
-.texto-animado > div span {
+
+.texto-animado>div span {
     font-size: 50px;
     line-height: 50px;
 }
@@ -317,7 +332,7 @@ main {
     top: 50px;
 }
 
-.texto-animado > div.animacion {
+.texto-animado>div.animacion {
     transform: translateY(-50px);
 }
 
@@ -329,15 +344,15 @@ main {
 /* Container Styles */
 .container-salon {
     display: flex;
-    justify-content: space-around; 
-    flex-wrap: nowrap; 
+    justify-content: space-around;
+    flex-wrap: nowrap;
     margin: 20px auto;
     padding: 10px;
     background-color: #888;
     text-align: center;
 }
 
-.banner-salon{
+.banner-salon {
     background-color: #333;
     width: 100%;
     height: 300px;
@@ -346,11 +361,11 @@ main {
 
 }
 
-.banner-salon p{
+.banner-salon p {
 
     text-align: center;
     color: #ccc;
-   
+
 }
 
 .container-salon .card {
@@ -445,6 +460,7 @@ main {
     align-content: center;
     justify-content: center;
 }
+
 .search-container {
     position: relative;
     display: flex;
@@ -471,6 +487,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type='email'],
 select {
     width: 100%;
@@ -529,6 +546,7 @@ input[type='submit']:hover {
         top: -300px;
         opacity: 0;
     }
+
     to {
         top: 0;
         opacity: 1;
@@ -540,6 +558,7 @@ input[type='submit']:hover {
         top: -300px;
         opacity: 0;
     }
+
     to {
         top: 0;
         opacity: 1;
@@ -552,6 +571,7 @@ input[type='submit']:hover {
     font-size: 28px;
     font-weight: bold;
 }
+
 .close-form {
     color: white;
     float: right;
@@ -572,6 +592,7 @@ input[type='submit']:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal-header {
     padding: 2px 16px;
     background-color: #846186;
@@ -583,6 +604,7 @@ input[type='submit']:hover {
     background-color: #ffffff;
     overflow-y: auto;
 }
+
 .modal-footer {
     padding: 2px 16px;
     background-color: #846186;
@@ -640,11 +662,12 @@ input[type='submit']:hover {
 #total {
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
 }
 
-.boton-carrito-vaciar{
+.boton-carrito-vaciar {
     font-weight: 500;
     text-decoration: none;
     color: white;
@@ -659,6 +682,7 @@ h2{
     border: none;
     border-radius: 8px;
 }
+
 .contador-productos {
     background-color: #000;
     color: #fff;
@@ -744,7 +768,7 @@ footer {
     place-items: center;
 }
 
-.footer-top-wrapper > section {
+.footer-top-wrapper>section {
     width: 180px;
 }
 
@@ -769,10 +793,6 @@ menu li {
 }
 
 
-.logo {
-    width: 180px;
-    margin-bottom: 8px;
-}
 
 .social-links {
     display: flex;
@@ -803,7 +823,7 @@ menu li {
     padding: 4px;
 }
 
-.footer-bottom > small {
+.footer-bottom>small {
     font-size: 16px;
     margin: 0 4px;
 }
