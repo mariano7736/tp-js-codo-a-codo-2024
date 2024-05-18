@@ -1,0 +1,188 @@
+[
+	{
+		"id": 1,
+		"nombre": "Torta Pelota",
+		"precio": 10000,
+		"img": "torta-pelota-1.jpg"
+	},
+	{
+		"id": 2,
+		"nombre": "Torta Spiderman",
+		"precio": 8500,
+		"img": "torta-spiderman-1.jpg"
+	},
+	{
+		"id": 3,
+		"nombre": "Torta Rueda",
+		"precio": 8400,
+		"img": "torta-rueda.jpg"
+	},
+	{
+		"id": 4,
+		"nombre": "Torta Rogel",
+		"precio": 9130,
+		"img": "torta-rogel-1.jpg"
+	},
+	{
+		"id": 5,
+		"nombre": "Torta Cupcake",
+		"precio": 9190,
+		"img": "torta-cupcake-1.jpg"
+	},
+	{
+		"id": 6,
+		"nombre": "Torta Unicornio",
+		"precio": 7490,
+		"img": "torta-unicornio.jpg"
+	},
+	{
+		"id": 7,
+		"nombre": "Torta Mario",
+		"precio": 9500,
+		"img": "torta-mario.png"
+	},
+	{
+		"id": 8,
+		"nombre": "Torta Egresado",
+		"precio": 6400,
+		"img": "torta-egresado.jpg"
+	},
+	{
+		"id": 9,
+		"nombre": "Torta It",
+		"precio": 11800,
+		"img": "torta-it.jpg"
+	},
+	{
+		"id": 10,
+		"nombre": "Torta Panda",
+		"precio": 9800,
+		"img": "torta-panda.jpg"
+	},
+	{
+		"id": 11,
+		"nombre": "Chocotorta",
+		"precio": 5500,
+		"img": "chocotorta.png"
+	},
+	{
+		"id": 12,
+		"nombre": "Brownie",
+		"precio": 4500,
+		"img": "brownie.jpg"
+	},
+	{
+		"id": 13,
+		"nombre": "Torta Vanellope",
+		"precio": 8500,
+		"img": "torta-vanellope-1.jpg"
+	},
+	{
+		"id": 14,
+		"nombre": "Torta Arcoiris",
+		"precio": 7700,
+		"img": "arcoiris.png"
+	},
+	{
+		"id": 15,
+		"nombre": "Torta Frutos Rojos",
+		"precio": 4900,
+		"img": "torta-frutos-rojos-1.jpg"
+	},
+	{
+		"id": 16,
+		"nombre": "Torta Emoji Poop",
+		"precio": 6450,
+		"img": "torta-emoji.jpg"
+	},
+	{
+		"id": 17,
+		"nombre": "Torta Green",
+		"precio": 6650,
+		"img": "torta-green-1.jpg"
+	},
+	{
+		"id": 18,
+		"nombre": "Torta Futbol",
+		"precio": 8800,
+		"img": "torta-futbol.jpg"
+	},
+	{
+		"id": 19,
+		"nombre": "Torta Glamour",
+		"precio": 9600,
+		"img": "torta-glamour-1.png"
+	},
+	{
+		"id": 20,
+		"nombre": "Torta Mochila",
+		"precio": 10600,
+		"img": "torta-mochila.jpg"
+	},
+	{
+		"id": 21,
+		"nombre": "Torta Boca",
+		"precio": 9750,
+		"img": "torta-boca-1.jpg"
+	},
+	{
+		"id": 22,
+		"nombre": "Torta Frida",
+		"precio": 9750,
+		"img": "torta-frida-1.jpg"
+	},
+	{
+		"id": 23,
+		"nombre": "Torta Fernet",
+		"precio": 8400,
+		"img": "torta-fernet-1.jpg"
+	},
+	{
+		"id": 24,
+		"nombre": "Torta Nacimiento",
+		"precio": 7800,
+		"img": "torta-nacimiento-1.jpg"
+	},
+	{
+		"id": 25,
+		"nombre": "Torta Marinero",
+		"precio": 10780,
+		"img": "torta-marinero.jpg"
+	},
+	{
+		"id": 26,
+		"nombre": "Torta Mario Bros",
+		"precio": 6450,
+		"img": "torta-mario.png"
+	},
+	{
+		"id": 27,
+		"nombre": "Torta Meme",
+		"precio": 5450,
+		"img": "torta-meme.png"
+	},
+	{
+		"id": 28,
+		"nombre": "Torta Frozen",
+		"precio": 5850,
+		"img": "torta-frozen.jpg"
+	},
+    {
+		"id": 29,
+		"nombre": "Torta Pink",
+		"precio": 4850,
+		"img": "torta-pink.jpg"
+	},
+    {
+		"id": 30,
+		"nombre": "Torta Rainbow",
+		"precio": 5850,
+		"img": "torta-rainbow.jpg"
+	},
+    {
+		"id": 31,
+		"nombre": "Torta Zorro",
+		"precio": 5850,
+		"img": "torta-zorro.jpg"
+	}
+]
