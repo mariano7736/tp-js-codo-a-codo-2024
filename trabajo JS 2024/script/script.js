@@ -396,3 +396,62 @@ document.querySelector('.scroll-right').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+/* texto animado*/
+class TextoAnimado {
+    constructor(id) {
+        this.texto = document.getElementById(id);
+        this.letras = this.texto.innerText.split("");
+
+        this.texto.innerText = '';
+
+        this.letras.forEach((letra) => {
+            let caracter = letra === ' ' ? '&nbsp;' : letra;
+
+            this.texto.innerHTML = this.texto.innerHTML + `
+                <div>
+                    <span>${caracter}</span>
+                    <span class="segunda-linea">${caracter}</span>
+                </div>
+            `;
+        });
+
+        this.iniciarAnimacion();
+    }
+
+    iniciarAnimacion() {
+        const duracionAnimacion = 100; // Duración de la animación en milisegundos
+        let cuenta = 0;
+
+        const animar = () => {
+            const intervalo = setInterval(() => {
+                if (cuenta < this.texto.children.length) {
+                    this.texto.children[cuenta].classList.add('animacion');
+                    cuenta += 1;
+                } else {
+                    clearInterval(intervalo);
+                    // Reiniciar la animación después de un breve retraso
+                    setTimeout(() => {
+                        cuenta = 0;
+                        this.texto.innerHTML = ''; // Limpiar el contenido para reiniciar la animación
+                        this.letras.forEach((letra) => {
+                            let caracter = letra === ' ' ? '&nbsp;' : letra;
+
+                            this.texto.innerHTML = this.texto.innerHTML + `
+                                <div>
+                                    <span>${caracter}</span>
+                                    
+                                </div>
+                            `;
+                        });
+                        animar();
+                    }, duracionAnimacion);
+                }
+            }, duracionAnimacion);
+        };
+
+        animar();
+    }
+}
+
+new TextoAnimado('logo');

@@ -244,11 +244,93 @@ main {
     margin: 20px;
 }
 
+.layout a {
+    text-decoration: none;
+    color: #f1ebeb;
+    outline: none;
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(.banner-salon);
+}
+
+
+.layout {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logotipo {
+    padding: 10px;
+    color: var(--logotipo);
+}
+
+
+.logotipo:hover .subtitulo {
+    background: var(--primario);
+}
+
+.texto-animado {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.texto-animado > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .3s ease all;
+}
+
+.texto-animado > div.animacion {
+    transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 100px;
+}
+
+.texto-animado .segunda-linea {
+
+    position: absolute;
+    top: 100px;
+}
+.texto-animado > div span {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.texto-animado .segunda-linea {
+    top: 50px;
+}
+
+.texto-animado > div.animacion {
+    transform: translateY(-50px);
+}
+
+.logotipo .subtitulo {
+    font-size: 20px;
+}
+
+
 /* Container Styles */
 .container-salon {
     display: flex;
-    justify-content: space-around; /* Centers the cards and spaces them evenly */
-    flex-wrap: nowrap; /* Allows wrapping to a new line if there's not enough space */
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
     margin: 20px auto;
     padding: 10px;
     background-color: #888;
