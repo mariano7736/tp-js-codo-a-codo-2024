@@ -44,6 +44,8 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: aliceblue;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 .slider-frame {
@@ -202,52 +204,15 @@ main {
 
 }
 
-/*
-.scroll-left, .scroll-right {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-    font-size: 24px;
-    user-select: none;
-}
-
-.scroll-left {
-    left: 10px;
-}
-
-.scroll-right {
-    right: 10px;
-}
 
 .container {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    position: relative; /* Ensure container is behind the buttons 
-    z-index: 1; /* Lower z-index than the scroll buttons 
-    padding: 10px; /* Add padding to prevent content being obscured 
-}
-
-.container .card {
-    flex: 0 0 auto; 
-    width: 250px;
+    position: relative; 
     margin: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
+    padding: 10px;
 }
-
-.container .card:hover {
-    transform: translateY(-10px);
-}
-
-
-
-*/
 
 .scroll-left, .scroll-right {                 /*hasta aca funciona maso*/
     position: fixed;
@@ -263,18 +228,15 @@ main {
 }
 
 .scroll-left {
-    left: 10px;
+    margin-left: 10px;
 }
 
 .scroll-right {
     right: 10px;
+
 }
 
-.container {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
+
 
 .container .card {
     flex: 0 0 auto; /* Evita que las tarjetas se estiren */
@@ -282,16 +244,69 @@ main {
     margin: 20px;
 }
 
-
-/*.container {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
+/* Container Styles */
+.container-salon {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-around; /* Centers the cards and spaces them evenly */
+    flex-wrap: nowrap; /* Allows wrapping to a new line if there's not enough space */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #888;
+    text-align: center;
 }
+
+.banner-salon{
+    background-color: #333;
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.banner-salon p{
+
+    text-align: center;
+    color: #ccc;
+   
+}
+
+.container-salon .card {
+    flex: 0 0 auto;
+    width: 330px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-salon .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-salon .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container-salon .card h4 {
+    font-weight: 300;
+    margin: 8px auto;
+}
+
+.container-salon .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px auto;
+}
+
+
 
 .container .card {
     width: 330px;
@@ -308,7 +323,7 @@ main {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-*/
+
 .container .card img {
     width: 330px;
     height: 290px;
