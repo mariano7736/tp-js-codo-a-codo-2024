@@ -383,7 +383,7 @@ main {
 .container-salon .card {
     flex: 0 0 auto;
     width: 330px;
-    height: 200px;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -856,4 +856,48 @@ menu li {
     text-align: center;
     text-decoration: none;
     font-size: 17px;
+}
+
+
+.container-salon {
+    display: flex;
+    gap: 20px; /* Espacio entre las tarjetas */
+    background-color: #252525;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px; /* Ajusta según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto y la imagen */
+    background-color: gray;
+}
+
+.img-salon {
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+.img-salon img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que la imagen se adapte al contenedor */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+}
+
+p {
+    margin: 0;
+    color: #555;
 }
