@@ -42,13 +42,14 @@ main {
 }
 
 .banner {
-    height: 250px;
-    display: flex;
+    height: 570px;
+    display: block;
     justify-content: center;
     width: 100%;
-    margin-top: 95px;
+    margin-top: 90px;
+    
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -59,12 +60,12 @@ main {
 }
 
 .slider-frame ul {
-    display: flex;
+    display:flex;
     padding: 0;
     width: 600%;
     animation: slide 25s infinite alternate ease-in-out;
     height: 100%;
-    margin: 0;
+    margin: 10;
 }
 
 .slider-frame li {
@@ -166,6 +167,17 @@ main {
 .social {
     width: 35px;
     display: flex;
+}
+
+.destacado{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: #034697;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 576px) {
