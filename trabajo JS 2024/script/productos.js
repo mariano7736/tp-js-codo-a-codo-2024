@@ -58,4 +58,4 @@ const productos = [
 		nombre: 'Torta Panda',
 		precio: 9800,
 		img: 'torta-panda.jpg'
-	}
+	}]
