@@ -1,7 +1,7 @@
 class TextoAnimado {
 	constructor(id, objetivo) {
 		this.texto = document.getElementById(id);
-		this.objetivo = document.getElementById(objetivo);
+		/*this.objetivo = document.getElementById(objetivo);*/
 		this.letras = this.texto.innerText.split("");
 
 		this.texto.innerText = '';
