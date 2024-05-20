@@ -130,6 +130,72 @@ main {
 
 }
 
+/* Sección nostros */
+.sección-nosotros {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.sección-nosotros h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #034697;
+}
+
+.sección-nosotros ul {
+    display:flex;
+    padding: 0;
+    width: 300%;
+    animation: slide-nosotros 25s infinite alternate ease-in-out;
+    height: 100%;
+    margin: 10;
+}
+
+.elemento-nosotros img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.elemento-nosotros {
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes slide-nosotros {
+
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+
+}
+
+/* Sección nosotros */
+
 .topnav {
     overflow: hidden;
     background-color: #333;
