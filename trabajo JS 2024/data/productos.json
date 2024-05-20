@@ -15,13 +15,13 @@
 		"id": 3,
 		"nombre": "Mercedes-Benz Clase C",
 		"precio": 42000,
-		"img": "clasec.jpg"
+		"img": "clasec.jpeg"
 	},
 	{
 		"id": 4,
 		"nombre": "Volkswagen Golf",
 		"precio": 25000,
-		"img": "golf.jpg"
+		"img": "golf.jpeg"
 	},
 	{
 		"id": 5,
@@ -75,7 +75,7 @@
 		"id": 13,
 		"nombre": "Mercedes-Benz Clase E",
 		"precio": 54000,
-		"img": "clase-e.jpeg"
+		"img": "clase-e.jpg"
 	},
 	{
 		"id": 14,
