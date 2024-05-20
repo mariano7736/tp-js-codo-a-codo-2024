@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/style.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/cakesdiamond.png">
+    <link rel="icon" type="image/x-icon" href="./img/codear.png">
     <script src="./script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
 
@@ -20,18 +20,24 @@
             <div class="icono">
                 <a href="Index.html"><img src="./img/icono.jpeg" class="logo"></a>
             </div>
-            <a href="#cart" id="carrito">
-                <div class="contenedor-carrito">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <div id="productos-carrito" class="contador-productos">0</div>
-                </div>
-            </a>
-            <a href="javascript:void(0);" id="icon-menu" class="icon">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="social" src="./img/instagram.png" alt=""></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social" src="./img/facebook.png" alt=""></a>
-            <a href="#ingresar" class="boton" id="myForm">Contacto</a>
+            <div class="menu">
+                <a href="#ingresar" class="boton" id="myForm">Contacto</a>
+                <a href="#cart" id="carrito">
+                    <div class="contenedor-carrito">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div id="productos-carrito" class="contador-productos">0</div>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" id="icon-menu" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="redes">
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="social" src="./img/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="social" src="./img/facebook.png" alt=""></a>
+                
+            </div>
         </div>
         
         <div class="banner">
@@ -61,6 +67,10 @@
             <h2 class="destacado">
                 Coches Destacados
             </h2>
+            <div id="container-products" class="container">
+                <div class="scroll-left">&#9664;</div>
+                <div class="scroll-right">&#9654;</div>
+            </div>
         </div>
     
         <div class="form">
@@ -94,10 +104,7 @@
             </div>
         </div>
          
-        <div id="container-products" class="container">
-            <div class="scroll-left">&#9664;</div>
-            <div class="scroll-right">&#9654;</div>
-        </div>
+
         
         <div class="banner-salon">
             <div class="layout">

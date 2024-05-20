@@ -208,8 +208,8 @@ async function renderizarProductos() {
     recorrerArray(productos);
 }
 
-function recorrerArray(arregloProductos) {
-    arregloProductos.forEach((producto) => {
+function recorrerArray(verProductos) {
+    verProductos.forEach((producto) => {
         const divCard = document.createElement('div');
         divCard.classList.add('card');
         divCard.innerHTML += `
@@ -233,7 +233,7 @@ const btnFiltro = document.querySelector('#filtro');
 btnFiltro.addEventListener('click', myFunction);
 
 async function myFunction() {
-    const productos = await realizarPeticion(file);
+    const productos = await realizarPeticion(url);
     let productosFiltrados, filtro;
     filtro = inputFiltar.value.toLowerCase();
     productosFiltrados = productos.filter((producto) => producto.nombre.toLowerCase().includes(filtro));

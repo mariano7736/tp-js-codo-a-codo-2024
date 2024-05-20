@@ -15,174 +15,174 @@
 		"id": 3,
 		"nombre": "Mercedes-Benz Clase C",
 		"precio": 42000,
-		"img": "torta-rueda.jpg"
+		"img": "clasec.jpg"
 	},
 	{
 		"id": 4,
 		"nombre": "Volkswagen Golf",
 		"precio": 25000,
-		"img": "torta-rogel-1.jpg"
+		"img": "golf.jpg"
 	},
 	{
 		"id": 5,
 		"nombre": "Porsche 911",
 		"precio": 99000,
-		"img": "torta-cupcake-1.jpg"
+		"img": "porsche.jpg"
 	},
 	{
 		"id": 6,
 		"nombre": "BMW X5",
 		"precio": 60000,
-		"img": "torta-unicornio.jpg"
+		"img": "bmwx5.jpeg"
 	},
 	{
 		"id": 7,
 		"nombre": "Audi Q7",
 		"precio": 55000,
-		"img": "torta-mario.png"
+		"img": "audiq7.jpg"
 	},
 	{
 		"id": 8,
 		"nombre": "Mercedes-Benz GLE",
 		"precio": 65000,
-		"img": "torta-egresado.jpg"
+		"img": "mercedes-gle.jpg"
 	},
 	{
 		"id": 9,
 		"nombre": "Volkswagen Passat",
 		"precio": 28000,
-		"img": "torta-it.jpg"
+		"img": "passat.jpeg"
 	},
 	{
 		"id": 10,
 		"nombre": "Porsche Cayenne",
 		"precio": 67000,
-		"img": "torta-panda.jpg"
+		"img": "cayenne.jpg"
 	},
 	{
 		"id": 11,
 		"nombre": "BMW Serie 5",
 		"precio": 54000,
-		"img": "chocotorta.png"
+		"img": "serie5.jpeg"
 	},
 	{
 		"id": 12,
 		"nombre": "Audi TT",
 		"precio": 45000,
-		"img": "brownie.jpg"
+		"img": "audi-tt.jpg"
 	},
 	{
 		"id": 13,
 		"nombre": "Mercedes-Benz Clase E",
 		"precio": 54000,
-		"img": "torta-vanellope-1.jpg"
+		"img": "clase-e.jpeg"
 	},
 	{
 		"id": 14,
 		"nombre": "Volkswagen Tiguan",
 		"precio": 30000,
-		"img": "arcoiris.png"
+		"img": "tiguan.jpg"
 	},
 	{
 		"id": 15,
 		"nombre": "Porsche Macan",
 		"precio": 57000,
-		"img": "torta-frutos-rojos-1.jpg"
+		"img": "porsche-macan.jpg"
 	},
 	{
 		"id": 16,
 		"nombre": "BMW Z4",
 		"precio": 50000,
-		"img": "torta-emoji.jpg"
+		"img": "z4.jpg"
 	},
 	{
 		"id": 17,
 		"nombre": "Audi A6",
 		"precio": 54000,
-		"img": "torta-green-1.jpg"
+		"img": "audia6.jpeg"
 	},
 	{
 		"id": 18,
 		"nombre": "Mercedes-Benz GLC",
 		"precio": 58000,
-		"img": "torta-futbol.jpg"
+		"img": "glc.jpg"
 	},
 	{
 		"id": 19,
 		"nombre": "Volkswagen Arteon",
 		"precio": 37000,
-		"img": "torta-glamour-1.png"
+		"img": "arteon.jpg"
 	},
 	{
 		"id": 20,
 		"nombre": "Porsche Panamera",
 		"precio": 87000,
-		"img": "torta-mochila.jpg"
+		"img": "panamera.jpg"
 	},
 	{
 		"id": 21,
 		"nombre": "BMW M3",
 		"precio": 70000,
-		"img": "torta-boca-1.jpg"
+		"img": "m3.jpg"
 	},
 	{
 		"id": 22,
 		"nombre": "Audi R8",
 		"precio": 142000,
-		"img": "torta-frida-1.jpg"
+		"img": "r8.jpg"
 	},
 	{
 		"id": 23,
 		"nombre": "Mercedes-Benz S-Class",
 		"precio": 110000,
-		"img": "torta-fernet-1.jpg"
+		"img": "s-class.jpg"
 	},
 	{
 		"id": 24,
 		"nombre": "Volkswagen Jetta",
 		"precio": 20000,
-		"img": "torta-nacimiento-1.jpg"
+		"img": "jetta.jpg"
 	},
 	{
 		"id": 25,
 		"nombre": "Porsche Taycan",
 		"precio": 81000,
-		"img": "torta-marinero.jpg"
+		"img": "taycan.jpg"
 	},
 	{
 		"id": 26,
 		"nombre": "BMW i8",
 		"precio": 147500,
-		"img": "torta-mario.png"
+		"img": "i8.jpg"
 	},
 	{
 		"id": 27,
 		"nombre": "Audi A3",
 		"precio": 34000,
-		"img": "torta-meme.png"
+		"img": "audia3.jpg"
 	},
 	{
 		"id": 28,
 		"nombre": "Mercedes-Benz CLA",
 		"precio": 38000,
-		"img": "torta-frozen.jpg"
+		"img": "cla.jpg"
 	},
     {
 		"id": 29,
 		"nombre": "Volkswagen Polo",
 		"precio": 22000,
-		"img": "torta-pink.jpg"
+		"img": "polo.jpg"
 	},
     {
 		"id": 30,
 		"nombre": "Porsche 718 Boxster",
 		"precio": 63000,
-		"img": "torta-rainbow.jpg"
+		"img": "boxster.jpg"
 	},
     {
 		"id": 31,
 		"nombre": "BMW X3",
 		"precio": 43000,
-		"img": "torta-zorro.jpg"
+		"img": "x3.jpg"
 	}
 ]

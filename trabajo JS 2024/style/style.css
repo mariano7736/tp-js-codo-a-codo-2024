@@ -138,27 +138,45 @@ main {
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align:left;
-    padding: 5px 70px;
-    text-decoration: none;
-    font-size: 22px;
+.icono {
+    margin: 0;
 }
+
+.icono img {
+    padding: .5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin: auto;
+}
+
+.menu a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes {
+    display: grid;
+    place-content: center;
+    margin: auto 1rem;
+    gap: 1rem;
+}
+
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    
+    color: #1962c2;
 }
 
-.topnav a.active {
-    background-color: #c79cc9;
-    color: white;
-}
 
 .topnav .icon {
     display: none;
