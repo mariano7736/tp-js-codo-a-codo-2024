@@ -1,4 +1,4 @@
-const url ='https://raw.githubusercontent.com/mariano7736/tp-js-codo-a-codo-2024/main/trabajo%20JS%202024/data/productos.json?token=GHSAT0AAAAAACSH3UZM5OT4DQG3IFSGYQYEZSKUIDA';
+const url ='https://raw.githubusercontent.com/mariano7736/tp-js-codo-a-codo-2024/main/trabajo/data/productos.json';
 const file ='../data/productos.json';
 const containerProducts = document.getElementById('container-products');
 const modal = document.getElementById('ventana-modal');
