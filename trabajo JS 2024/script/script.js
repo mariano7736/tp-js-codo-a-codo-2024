@@ -1,4 +1,4 @@
-const url ='https://raw.githubusercontent.com/matnasama/proyecto-coderhouse/main/data/productos.json';
+const url ='https://raw.githubusercontent.com/mariano7736/tp-js-codo-a-codo-2024/main/trabajo%20JS%202024/data/productos.json?token=GHSAT0AAAAAACSH3UZM5OT4DQG3IFSGYQYEZSKUIDA';
 const file ='../data/productos.json';
 const containerProducts = document.getElementById('container-products');
 const modal = document.getElementById('ventana-modal');
@@ -203,7 +203,7 @@ async function realizarPeticion(datos) {
 
 async function renderizarProductos() {
     const productos = await realizarPeticion(url);
-    // const productos = await realizarPeticion(file);
+    //const productos = await realizarPeticion(file);
     recorrerArray(productos);
 }
 

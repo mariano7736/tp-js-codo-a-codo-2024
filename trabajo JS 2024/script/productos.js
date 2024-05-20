@@ -1,8 +1,8 @@
 const productos = [
 	{
 		id: 1,
-		nombre: 'Torta Pelota',
-		precio: 10000,
+		nombre: 'Pelota',
+		precio: 900,
 		img: 'torta-pelota-1.jpg'
 	},
 	{
