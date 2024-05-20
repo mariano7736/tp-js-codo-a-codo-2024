@@ -3,7 +3,7 @@ const productos = [
 		id: 1,
 		nombre: 'Pelota',
 		precio: 900,
-		img: 'trabajo JS 2024/img/descarga (1).jpeg'
+		img: 'bmw.jpg'
 	},
 	{
 		id: 2,
