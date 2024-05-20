@@ -17,12 +17,6 @@ body {
     box-sizing: inherit;
 }
 
-main {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 32px;
-}
-
 .logo {
     
     width: 100px;
@@ -30,172 +24,17 @@ main {
     margin: 5px 0 8px 10px;
 }
 
-.banner {
-
-    background-image: url(/img/cakesdiamond.jpg);
-    background-size: 300px;
-    height: 250px;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-repeat: no-repeat;
-
+.icono {
+    margin: 0;
 }
 
-.banner {
-    height: 570px;
-    display: block;
-    justify-content: center;
-    width: 100%;
-
+.icono img {
+    padding: .5rem;
 }
-
-.slider-frame {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slider-frame ul {
-    display:flex;
-    padding: 0;
-    width: 600%;
-    animation: slide 25s infinite alternate ease-in-out;
-    height: 100%;
-    margin: 10;
-}
-
-.slider-frame li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider-frame img {
-    width: 100%;
-    height: 100%;
-
-}
-
-
-.slider-img {
-    object-fit: cover;
-    background-position: center center;
-
-}
-
-@keyframes slide {
-
-    0% {
-        margin-left: 0;
-    }
-
-    15% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: -100%;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    40% {
-        margin-left: -200%;
-    }
-
-    55% {
-        margin-left: -200%;
-    }
-
-    60% {
-        margin-left: -300%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    80% {
-        margin-left: -400%;
-    }
-
-    100% {
-        margin-left: -400%;
-    }
-
-}
-
-/* Sección nostros */
-.sección-nosotros {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-.sección-nosotros h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    color: #034697;
-}
-
-.sección-nosotros ul {
-    display:flex;
-    padding: 0;
-    width: 300%;
-    animation: slide-nosotros 25s infinite alternate ease-in-out;
-    height: 100%;
-    margin: 10;
-}
-
-.elemento-nosotros img {
-    width: 100%;
-    height: 100%;
-
-}
-
-
-.elemento-nosotros {
-    width: 100%;
-    list-style: none;
-}
-
-@keyframes slide-nosotros {
-
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
-
-}
-
-/* Sección nosotros */
 
 .topnav {
-    overflow: hidden;
     background-color: #333;
-    position: fixed;
+    height: 200px;
     width: 100%;
     top: 0;
     left: 0;
@@ -249,16 +88,6 @@ main {
     display: flex;
 }
 
-.destacado{
-    font-size: 28px;
-    font-weight: 800;
-    text-align: center;
-    color: #034697;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
 
 @media screen and (max-width: 576px) {
     .topnav a:not(:first-child) {
@@ -306,44 +135,15 @@ main {
 
 }
 
-
-.container {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    margin: 20px;
-    padding: 10px;
-}
-
-.container-destacados {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.scroll-left,
-.scroll-right {
-    /*hasta aca funciona maso*/
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    user-select: none;
+.container-catalogo {
+    max-width: 80%;
     display: grid;
-    place-content: center;
-    height: 30%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px; 
+    grid-auto-flow: row dense;
+    flex-wrap: wrap;
 }
-
-.scroll-left {
-    margin-left: 10px;
-}
-
-.scroll-right {
-    right: 10px;
-
-}
-
 
 
 .container .card {
@@ -353,104 +153,6 @@ main {
     margin: 20px;
 }
 
-.layout a {
-    text-decoration: none;
-    color: #f1ebeb;
-    outline: none;
-    font-family: 'Bebas Neue', cursive;
-    background-image: url(.banner-salon);
-}
-
-
-.layout {
-    width: 100%;
-    align-items: center;
-
-}
-
-.logotipo {
-    padding: 10px;
-    color: var(--logotipo);
-}
-
-
-.logotipo:hover .subtitulo {
-    background: var(--primario);
-}
-
-.texto-animado {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.texto-animado>div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: .6s ease all;
-}
-
-.texto-animado>div.animacion {
-    transform: translateY(-100px);
-}
-
-.texto-animado>div span {
-
-    font-size: 100px;
-    font-weight: normal;
-    line-height: 100px;
-}
-
-.texto-animado .segunda-linea {
-
-    position: absolute;
-    top: 100px;
-}
-
-.texto-animado>div span {
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.texto-animado .segunda-linea {
-    top: 50px;
-}
-
-.texto-animado>div.animacion {
-    transform: translateY(-50px);
-}
-
-.logotipo .subtitulo {
-    font-size: 20px;
-}
-
-
-/* Container Styles */
-.container-salon {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #888;
-    text-align: center;
-}
-
-.banner-salon {
-    background-color: #333;
-    width: 100%;
-    height: 300px;
-    display: grid;
-    place-content: center;
-}
-
-.banner-salon p {
-
-    text-align: center;
-    color: #ccc;
-
-}
 
 .container-salon .card {
     flex: 0 0 auto;
@@ -625,29 +327,6 @@ input[type='submit']:hover {
     animation-duration: 0.4s;
 }
 
-@-webkit-keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0;
-    }
-
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0;
-    }
-
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
 
 .close {
     color: white;
