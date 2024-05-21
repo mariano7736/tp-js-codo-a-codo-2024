@@ -108,7 +108,7 @@ function agregarProducto(e) {
     e.preventDefault();
     if (e.target.classList.contains('agregar-carrito')) {
         const productoAgregado = e.target.parentElement;
-        alertProducto('success', 'producto agregado', '#34b555');
+        alertProducto('success', 'auto selecionado', '#34b555');
         leerDatosProducto(productoAgregado);
     }
 }
@@ -203,8 +203,8 @@ async function realizarPeticion(datos) {
 }
 
 async function renderizarProductos() {
-    const productos = await realizarPeticion(url);
-    //const productos = await realizarPeticion(file);
+    //const productos = await realizarPeticion(url);
+    const productos = await realizarPeticion(file);
     recorrerArray(productos);
 }
 
@@ -313,8 +313,8 @@ function finalizarCompra() {
     } else {
            Swal.fire({
             icon: 'success',
-            title: 'Compra finalizada',
-            text: '¡Has finalizado tu compra!',
+            title: 'Reserva finalizada',
+            text: '¡Has finalizado tu reserva!',
             timerProgressBar: true,
             timer: 3000,
             });
@@ -330,7 +330,7 @@ function vaciarCarrito() {
 
     Swal.fire({
         title: 'Vaciar carrito',
-        text: '¿Confirma que desea vaciar el carrito de compras?',
+        text: '¿Confirma que desea vaciar el carrito de reservas?',
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: 'Aceptar',
@@ -352,7 +352,7 @@ function vaciarCarrito() {
             Swal.fire({
                 title: 'Operación cancelada',
                 icon: 'info',
-                text: 'La operación de vaciar el carrito de compras fue cancelada',
+                text: 'La operación de vaciar el carrito de reservas fue cancelada',
                 timerProgressBar: true,
                 timer: 3000,
             });

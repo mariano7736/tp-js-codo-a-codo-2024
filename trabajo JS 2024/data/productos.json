@@ -3,186 +3,248 @@
 		"id": 1,
 		"nombre": "BMW Serie 3",
 		"precio": 41000,
-		"img": "bmw.jpg"
+		"img": "bmw.jpg",
+		"año": 2020,
+		"kilometros": 4500
 	},
 	{
 		"id": 2,
 		"nombre": "Audi A4",
 		"precio": 43000,
-		"img": "audia4.jpg"
+		"img": "audia4.jpg",
+		"año": 2019,
+		"kilometros": 7500
 	},
 	{
 		"id": 3,
 		"nombre": "Mercedes-Benz Clase C",
 		"precio": 42000,
-		"img": "clasec.jpeg"
+		"img": "clasec.jpeg",
+		"año": 2023,
+		"kilometros": 2500
 	},
 	{
 		"id": 4,
 		"nombre": "Volkswagen Golf",
 		"precio": 25000,
-		"img": "golf.jpeg"
+		"img": "golf.jpeg",
+		"año": 2021,
+		"kilometros": 9500
 	},
 	{
 		"id": 5,
 		"nombre": "Porsche 911",
 		"precio": 99000,
-		"img": "porsche.jpg"
+		"img": "porsche.jpg",
+		"año": 2018,
+		"kilometros": 6000
 	},
 	{
 		"id": 6,
 		"nombre": "BMW X5",
 		"precio": 60000,
-		"img": "bmwx5.jpeg"
+		"img": "bmwx5.jpeg",
+		"año": 2022,
+		"kilometros": 10000
 	},
 	{
 		"id": 7,
 		"nombre": "Audi Q7",
 		"precio": 55000,
-		"img": "audiq7.jpg"
+		"img": "audiq7.jpg",
+		"año": 2017,
+		"kilometros": 11500
 	},
 	{
 		"id": 8,
 		"nombre": "Mercedes-Benz GLE",
 		"precio": 65000,
-		"img": "mercedes-gle.jpg"
+		"img": "mercedes-gle.jpg",
+		"año": 2020,
+		"kilometros": 5000
 	},
 	{
 		"id": 9,
 		"nombre": "Volkswagen Passat",
 		"precio": 28000,
-		"img": "passat.jpeg"
+		"img": "passat.jpeg",
+		"año": 2019,
+		"kilometros": 12500
 	},
 	{
 		"id": 10,
 		"nombre": "Porsche Cayenne",
 		"precio": 67000,
-		"img": "cayenne.jpg"
+		"img": "cayenne.jpg",
+		"año": 2021,
+		"kilometros": 2000
 	},
 	{
 		"id": 11,
 		"nombre": "BMW Serie 5",
 		"precio": 54000,
-		"img": "serie5.jpeg"
+		"img": "serie5.jpeg",
+		"año": 2018,
+		"kilometros": 8500
 	},
 	{
 		"id": 12,
 		"nombre": "Audi TT",
 		"precio": 45000,
-		"img": "audi-tt.jpg"
+		"img": "audi-tt.jpg",
+		"año": 2023,
+		"kilometros": 3500
 	},
 	{
 		"id": 13,
 		"nombre": "Mercedes-Benz Clase E",
 		"precio": 54000,
-		"img": "clase-e.jpg"
+		"img": "clase-e.jpg",
+		"año": 2016,
+		"kilometros": 10500
 	},
 	{
 		"id": 14,
 		"nombre": "Volkswagen Tiguan",
 		"precio": 30000,
-		"img": "tiguan.jpg"
+		"img": "tiguan.jpg",
+		"año": 2017,
+		"kilometros": 500
 	},
 	{
 		"id": 15,
 		"nombre": "Porsche Macan",
 		"precio": 57000,
-		"img": "porsche-macan.jpg"
+		"img": "porsche-macan.jpg",
+		"año": 2020,
+		"kilometros": 15000
 	},
 	{
 		"id": 16,
 		"nombre": "BMW Z4",
 		"precio": 50000,
-		"img": "z4.jpg"
+		"img": "z4.jpg",
+		"año": 2015,
+		"kilometros": 3000
 	},
 	{
 		"id": 17,
 		"nombre": "Audi A6",
 		"precio": 54000,
-		"img": "audia6.jpeg"
+		"img": "audia6.jpeg",
+		"año": 2018,
+		"kilometros": 4500
 	},
 	{
 		"id": 18,
 		"nombre": "Mercedes-Benz GLC",
 		"precio": 58000,
-		"img": "glc.jpg"
+		"img": "glc.jpg",
+		"año": 2021,
+		"kilometros": 7000
 	},
 	{
 		"id": 19,
 		"nombre": "Volkswagen Arteon",
 		"precio": 37000,
-		"img": "arteon.jpg"
+		"img": "arteon.jpg",
+		"año": 2022,
+		"kilometros": 2000
 	},
 	{
 		"id": 20,
 		"nombre": "Porsche Panamera",
 		"precio": 87000,
-		"img": "panamera.jpg"
+		"img": "panamera.jpg",
+		"año": 2017,
+		"kilometros": 10000
 	},
 	{
 		"id": 21,
 		"nombre": "BMW M3",
 		"precio": 70000,
-		"img": "m3.jpg"
+		"img": "m3.jpg",
+		"año": 2024,
+		"kilometros": 1000
 	},
 	{
 		"id": 22,
 		"nombre": "Audi R8",
 		"precio": 142000,
-		"img": "r8.jpg"
+		"img": "r8.jpg",
+		"año": 2015,
+		"kilometros": 12000
 	},
 	{
 		"id": 23,
 		"nombre": "Mercedes-Benz S-Class",
 		"precio": 110000,
-		"img": "s-class.jpg"
+		"img": "s-class.jpg",
+		"año": 2022,
+		"kilometros": 1500
 	},
 	{
 		"id": 24,
 		"nombre": "Volkswagen Jetta",
 		"precio": 20000,
-		"img": "jetta.jpg"
+		"img": "jetta.jpg",
+		"año": 2019,
+		"kilometros": 6500
 	},
 	{
 		"id": 25,
 		"nombre": "Porsche Taycan",
 		"precio": 81000,
-		"img": "taycan.jpg"
+		"img": "taycan.jpg",
+		"año": 2020,
+		"kilometros": 500
 	},
 	{
 		"id": 26,
 		"nombre": "BMW i8",
 		"precio": 147500,
-		"img": "i8.jpg"
+		"img": "i8.jpg",
+		"año": 2023,
+		"kilometros": 4000
 	},
 	{
 		"id": 27,
 		"nombre": "Audi A3",
 		"precio": 34000,
-		"img": "audia3.jpg"
+		"img": "audia3.jpg",
+		"año": 2021,
+		"kilometros": 9000
 	},
 	{
 		"id": 28,
 		"nombre": "Mercedes-Benz CLA",
 		"precio": 38000,
-		"img": "cla.jpg"
+		"img": "cla.jpg",
+		"año": 2016,
+		"kilometros": 11000
 	},
-    {
+	{
 		"id": 29,
 		"nombre": "Volkswagen Polo",
 		"precio": 22000,
-		"img": "polo.jpg"
+		"img": "polo.jpg",
+		"año": 2023,
+		"kilometros": 2500
 	},
-    {
+	{
 		"id": 30,
 		"nombre": "Porsche 718 Boxster",
 		"precio": 63000,
-		"img": "boxster.jpg"
+		"img": "boxster.jpg",
+		"año": 2017,
+		"kilometros": 3000
 	},
-    {
+	{
 		"id": 31,
 		"nombre": "BMW X3",
 		"precio": 43000,
-		"img": "x3.jpg"
+		"img": "x3.jpg",
+		"año": 2018,
+		"kilometros": 7500
 	}
 ]
