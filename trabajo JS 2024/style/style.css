@@ -126,19 +126,40 @@ main {
 
 }
 
+/* Sección elegirnos */
+.contenedor-elegirnos{
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-elegirnos{
+    margin: 0px 40px;
+    height: 500px;
+    display: flex;
+    width: 400px;
+    background-color: beige;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border-bottom: groove;
+}
+
+.tarjeta-elegirnos img{
+    height: 230px;
+}
+.tarjeta-elegirnos p{
+    margin: 0px 20px;
+}
+
+/* Sección elegirnos */
+
 /* Sección nostros */
 .sección-nosotros {
     height: 100%;
     width: 100%;
     overflow: hidden;
 
-}
-
-.sección-nosotros h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    color: #034697;
 }
 
 .sección-nosotros ul {
