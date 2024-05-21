@@ -480,8 +480,10 @@ main {
 }
 
 .container-salon .card h4 {
-    font-weight: 300;
+    font-weight: 800;
     margin: 8px auto;
+    color: #fff;
+    font-size: 1.3em;
 }
 
 .container-salon .card p {
@@ -489,6 +491,9 @@ main {
     font-size: 16px;
     font-weight: 300;
     margin: 8px auto;
+    color: #fff;
+    opacity: .7;
+
 }
 
 

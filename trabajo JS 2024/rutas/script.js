@@ -236,16 +236,83 @@ function mostrarMenu() {
     navbar.className = navbar.className === 'topnav' ? (navbar.className += ' responsive') : (navbar.className = 'topnav');
 }
 
-const inputFiltar = document.querySelector('#myInput');
-const btnFiltro = document.querySelector('#filtro');
 
-btnFiltro.addEventListener('click', myFunction);
+const inputFiltrar = document.querySelector('#myInput');
+const btnOrdenarPrecio = document.querySelector('#ordenarPrecio');
+const btnOrdenarKilometros = document.querySelector('#ordenarKilometros');
+const btnFiltroGeneral = document.querySelector('#filtroGeneral');
+const btnResetFiltro = document.querySelector('#resetFiltro');
 
-async function myFunction() {
+// Event listeners para los botones desplegables de Precio
+document.querySelector('#ordenarPrecioAsc').addEventListener('click', () => ordenarPorPropiedad('precio', 'asc'));
+document.querySelector('#ordenarPrecioDesc').addEventListener('click', () => ordenarPorPropiedad('precio', 'desc'));
+
+// Event listeners para los botones desplegables de Kilómetros
+document.querySelector('#ordenarKilometrosAsc').addEventListener('click', () => ordenarPorPropiedad('kilometros', 'asc'));
+document.querySelector('#ordenarKilometrosDesc').addEventListener('click', () => ordenarPorPropiedad('kilometros', 'desc'));
+
+btnFiltroGeneral.addEventListener('click', filtrarGeneral);
+btnResetFiltro.addEventListener('click', resetearFiltro);
+
+// Filtrar al presionar Enter en el input
+inputFiltrar.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        filtrarGeneral();
+    }
+});
+
+// Event listener para el botón desplegable de Precio
+btnOrdenarPrecio.addEventListener('click', function () {
+    document.getElementById("ordenarPrecio").classList.toggle("active");
+    const dropdownContent = document.getElementById("ordenarPrecio").nextElementSibling;
+    dropdownContent.classList.toggle("show");
+});
+
+// Event listener para el botón desplegable de Kilómetros
+btnOrdenarKilometros.addEventListener('click', function () {
+    document.getElementById("ordenarKilometros").classList.toggle("active");
+    const dropdownContent = document.getElementById("ordenarKilometros").nextElementSibling;
+    dropdownContent.classList.toggle("show");
+});
+
+// Cerrar el menú desplegable si el usuario hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+async function ordenarPorPropiedad(propiedad, orden) {
     const productos = await realizarPeticion(url);
-    let productosFiltrados, filtro;
-    filtro = inputFiltar.value.toLowerCase();
-    productosFiltrados = productos.filter((producto) => producto.nombre.toLowerCase().includes(filtro));
+    
+    let productosOrdenados = productos.sort((a, b) => {
+        if (orden === 'asc') {
+            return a[propiedad] - b[propiedad];
+        } else {
+            return b[propiedad] - a[propiedad];
+        }
+    });
+
+    limpiarContenedorProductos();
+    recorrerArray(productosOrdenados);
+}
+
+async function filtrarGeneral() {
+    const productos = await realizarPeticion(url);
+    let filtro = inputFiltrar.value.toLowerCase();
+    
+    let productosFiltrados = productos.filter((producto) => {
+        return producto.nombre.toLowerCase().includes(filtro) ||
+               producto.año.toString().includes(filtro) ||
+               producto.precio.toString().includes(filtro) ||
+               producto.kilometros.toString().includes(filtro);
+    });
 
     if (productosFiltrados.length > 0) {
         limpiarContenedorProductos();
@@ -262,6 +329,45 @@ async function myFunction() {
         recorrerArray(productos);
     }
 }
+
+function resetearFiltro() {
+    inputFiltrar.value = ''; 
+    realizarPeticion(url).then(productos => {
+        limpiarContenedorProductos();
+        recorrerArray(productos);
+    });
+}
+
+
+
+
+
+// const inputFiltar = document.querySelector('#myInput');
+// const btnFiltro = document.querySelector('#filtro');
+
+// btnFiltro.addEventListener('click', myFunction);
+
+// async function myFunction() {
+//     const productos = await realizarPeticion(url);
+//     let productosFiltrados, filtro;
+//     filtro = inputFiltar.value.toLowerCase();
+//     productosFiltrados = productos.filter((producto) => producto.nombre.toLowerCase().includes(filtro));
+
+//     if (productosFiltrados.length > 0) {
+//         limpiarContenedorProductos();
+//         recorrerArray(productosFiltrados);
+//     } else {
+//         Swal.fire({
+//             icon: 'error',
+//             title: 'Filtrando productos',
+//             text: '¡No se encontraron productos con el filtro especificado!',
+//             timerProgressBar: true,
+//             timer: 10000,
+//         });
+//         limpiarContenedorProductos();
+//         recorrerArray(productos);
+//     }
+// }
 
 function limpiarContenedorProductos() {
     while (containerProducts.firstChild) {

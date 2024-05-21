@@ -49,10 +49,22 @@
         <div class="filtro">
             <div class="search-container">
                 <input type="text" class="search-input" id="myInput" placeholder="Buscar Vehiculo ..." />
-                <button id="filtro" class="boton-standar">Marca</button>
-                <button id="filtro" class="boton-standar">Año</button>
-                <button id="filtro" class="boton-standar">Precio</button>
-                <button id="filtro" class="boton-standar">Filtrar</button>
+                <div class="dropdown">
+                    <button id="ordenarPrecio" class="dropbtn">Ordenar por Precio</button>
+                    <div class="dropdown-content">
+                        <a id="ordenarPrecioAsc" href="#">Menor precio</a>
+                        <a id="ordenarPrecioDesc" href="#">Mayor precio</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="ordenarKilometros" class="dropbtn">Ordenar por Kilómetros</button>
+                    <div class="dropdown-content">
+                        <a id="ordenarKilometrosAsc" href="#">Kilómetros Asc</a>
+                        <a id="ordenarKilometrosDesc" href="#">Kilómetros Desc</a>
+                    </div>
+                </div>
+                <button id="filtroGeneral" class="boton-standar">Filtrar</button>
+                <button id="resetFiltro" class="boton-standar">Resetear Filtro</button>
             </div>
         </div>
         
