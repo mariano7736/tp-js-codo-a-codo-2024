@@ -34,13 +34,22 @@ body {
 
 .topnav {
     background-color: #333;
-    height: 200px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     display: flex;
     justify-content: space-between;
+}
+
+.destacado{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: #034697;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 3rem;
 }
 
 .icono {
@@ -217,6 +226,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
+    margin: 3rem;
 }
 
 .search-container {

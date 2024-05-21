@@ -231,6 +231,7 @@ main {
     place-content: center;
     margin: auto 1rem;
     gap: 1rem;
+    width: 35px;
 }
 
 

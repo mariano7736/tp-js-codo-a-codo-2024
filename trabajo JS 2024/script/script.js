@@ -214,7 +214,7 @@ function recorrerArray(verProductos) {
         divCard.classList.add('card');
         divCard.innerHTML += `
             <div>
-			    <img src="../img/${producto.img}" alt="${producto.nombre}" />
+			    <img src="./img/${producto.img}" alt="${producto.nombre}" />
             </div>
             <div>
                 <h2>${producto.nombre}</h2>
@@ -236,32 +236,6 @@ function mostrarMenu() {
     navbar.className = navbar.className === 'topnav' ? (navbar.className += ' responsive') : (navbar.className = 'topnav');
 }
 
-const inputFiltar = document.querySelector('#myInput');
-const btnFiltro = document.querySelector('#filtro');
-
-btnFiltro.addEventListener('click', myFunction);
-
-async function myFunction() {
-    const productos = await realizarPeticion(url);
-    let productosFiltrados, filtro;
-    filtro = inputFiltar.value.toLowerCase();
-    productosFiltrados = productos.filter((producto) => producto.nombre.toLowerCase().includes(filtro));
-
-    if (productosFiltrados.length > 0) {
-        limpiarContenedorProductos();
-        recorrerArray(productosFiltrados);
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Filtrando productos',
-            text: '¡No se encontraron productos con el filtro especificado!',
-            timerProgressBar: true,
-            timer: 10000,
-        });
-        limpiarContenedorProductos();
-        recorrerArray(productos);
-    }
-}
 
 function limpiarContenedorProductos() {
     while (containerProducts.firstChild) {
@@ -461,7 +435,7 @@ class TextoAnimado {
 				}
 			}, 30);
 
-		} ,6000);
+		} ,4000);
 
 
 	}
