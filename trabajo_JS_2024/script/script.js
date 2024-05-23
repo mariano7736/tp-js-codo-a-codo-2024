@@ -1,4 +1,4 @@
-const url ='https://raw.githubusercontent.com/mariano7736/tp-js-codo-a-codo-2024/main/trabajo%20JS%202024/data/productos.json';
+const url ='https://raw.githubusercontent.com/mariano7736/tp-js-codo-a-codo-2024/main/trabajo_JS_2024/data/productos.json';
 //const url ='https://raw.githubusercontent.com/matnasama/proyecto-coderhouse/main/data/productos.json';
 const file ='../data/productos.json';
 const containerProducts = document.getElementById('container-products');
