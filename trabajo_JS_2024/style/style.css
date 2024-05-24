@@ -285,7 +285,7 @@ main {
     margin-top: 20px;
     margin-bottom: 0px;
 }
-
+/*
 @media screen and (max-width: 576px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -330,6 +330,150 @@ main {
         text-align: left;
     }
 
+}
+*/
+@media screen and (max-width: 576px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    main {
+        margin-bottom: 270px;
+    }
+
+    .contenedor-elegirnos {
+        flex-direction: column;
+    }
+
+    .tarjeta-elegirnos {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .slider-frame ul {
+        width: 100%;
+        animation: none;
+    }
+
+    .slider-frame img {
+        object-fit: contain;
+    }
+
+    .container .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container-salon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-salon .card {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icono img{
+        position: fixed;
+        
+    }
+
+    .fa-shopping-cart:before {
+
+        position: fixed;
+        top: 7%;
+        left: 70%;
+    }
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contenedor-elegirnos {
+        flex-direction: column;
+    }
+
+    .tarjeta-elegirnos {
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .container-salon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-salon .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .container .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .slider-frame ul {
+        width: 300%;
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .topnav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contenedor-elegirnos {
+        flex-direction: row;
+    }
+
+    .tarjeta-elegirnos {
+        width: 400px;
+        height: 500px;
+        margin: 0 40px;
+    }
+
+    .container-salon {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .container-salon .card {
+        width: 330px;
+        height: 300px;
+    }
+
+    .container .card {
+        width: 330px;
+        height: 430px;
+        margin: 20px;
+    }
+
+    .slider-frame ul {
+        width: 600%;
+        animation: slide 25s infinite alternate ease-in-out;
+    }
 }
 
 
