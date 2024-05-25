@@ -53,6 +53,7 @@ main {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .slider-frame ul {
@@ -333,6 +334,18 @@ main {
 }
 */
 @media screen and (max-width: 576px) {
+    
+    html{
+        width: 450px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+    
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -344,6 +357,10 @@ main {
 
     main {
         margin-bottom: 270px;
+    }
+
+    .banner{
+        height: 100%;
     }
 
     .contenedor-elegirnos {
@@ -377,6 +394,7 @@ main {
     .container-salon {
         flex-direction: column;
         align-items: center;
+        width: 367px;
     }
 
     .container-salon .card {
@@ -408,11 +426,12 @@ main {
 
     .contenedor-elegirnos {
         flex-direction: column;
+        align-items: center;
     }
 
     .tarjeta-elegirnos {
-        width: 80%;
-        height: auto;
+        width: 370px;
+        height: 450px;    
         margin: 20px 0;
     }
 
@@ -431,9 +450,10 @@ main {
         margin: 10px 0;
     }
 
+    
+    
     .slider-frame ul {
-        width: 300%;
-        animation: none;
+        width: 600%;
     }
 }
 
