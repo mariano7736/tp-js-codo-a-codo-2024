@@ -355,6 +355,9 @@ main {
         display: block;
     }
 
+    .menu a{
+        display: none;
+    }
     main {
         margin-bottom: 270px;
     }
