@@ -348,6 +348,7 @@ main {
 
     .contenedor-elegirnos {
         flex-direction: column;
+        align-items:center;
     }
 
     .tarjeta-elegirnos {
@@ -356,9 +357,12 @@ main {
         margin: 20px 0;
     }
 
+    .tarjeta-elegirnos img {
+        width: 80%;
+    }
+
     .slider-frame ul {
-        width: 100%;
-        animation: none;
+        width: 600%;
     }
 
     .slider-frame img {
