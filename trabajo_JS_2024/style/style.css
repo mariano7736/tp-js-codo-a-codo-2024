@@ -24,7 +24,7 @@ main {
 }
 
 .logo {
-    
+
     width: 100px;
     border-radius: 100%;
     margin: 5px 0 8px 10px;
@@ -57,7 +57,7 @@ main {
 }
 
 .slider-frame ul {
-    display:flex;
+    display: flex;
     padding: 0;
     width: 600%;
     animation: slide 25s infinite alternate ease-in-out;
@@ -128,12 +128,12 @@ main {
 }
 
 /* Sección elegirnos */
-.contenedor-elegirnos{
+.contenedor-elegirnos {
     display: flex;
     justify-content: center;
 }
 
-.tarjeta-elegirnos{
+.tarjeta-elegirnos {
     margin: 20px 40px;
     height: 500px;
     display: flex;
@@ -144,16 +144,18 @@ main {
     justify-content: center;
     border-radius: 50px;
     border-bottom: groove;
-    font-family: "Reddit Sans", sans-serif;;
+    font-family: "Reddit Sans", sans-serif;
+    ;
 }
 
 
-.tarjeta-elegirnos img{
+.tarjeta-elegirnos img {
     height: 230px;
     width: 300px;
     border-radius: 30px;
 }
-.tarjeta-elegirnos p{
+
+.tarjeta-elegirnos p {
     margin: 0px 20px;
 }
 
@@ -168,7 +170,7 @@ main {
 }
 
 .sección-nosotros ul {
-    display:flex;
+    display: flex;
     padding: 0;
     width: 300%;
     animation: slide-nosotros 25s infinite alternate ease-in-out;
@@ -262,7 +264,7 @@ main {
 
 
 .topnav a:hover {
-    
+
     color: #1962c2;
 }
 
@@ -276,7 +278,8 @@ main {
     display: flex;
 }
 
-.destacado, .elegirnos{
+.destacado,
+.elegirnos {
     font-size: 28px;
     font-weight: 800;
     text-align: center;
@@ -286,6 +289,7 @@ main {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
 /*
 @media screen and (max-width: 576px) {
     .topnav a:not(:first-child) {
@@ -334,18 +338,22 @@ main {
 }
 */
 @media screen and (max-width: 576px) {
-    
-    html{
+
+    html {
         width: 450px;
         align-items: center;
         justify-content: center;
     }
 
-    body{
+    body {
         align-items: center;
         justify-content: center;
     }
-    
+
+    .topnav{
+        height: 125px;
+    }
+
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -353,22 +361,22 @@ main {
     .topnav a.icon {
         float: right;
         display: block;
+        position: absolute;
+        left: 300px;
     }
 
-    .menu a{
-        display: none;
-    }
+
     main {
         margin-bottom: 270px;
     }
 
-    .banner{
+    .banner {
         height: 100%;
     }
 
     .contenedor-elegirnos {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
 
     .tarjeta-elegirnos {
@@ -404,16 +412,79 @@ main {
         width: 90%;
         height: auto;
     }
+
+    /* Ocultar el menú por defecto en pantallas pequeñas */
+    .menu a {
+        display: none;
+    }
+
+    /* Mostrar el ícono de menú hamburguesa */
+
+    /* Mostrar el menú cuando esté activo */
+    .menu.active a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background: #fff;
+        /* Ajusta el fondo según tu diseño */
+        border-bottom: 1px solid #ccc;
+        /* Ajusta el borde según tu diseño */
+    } 
+    
+    /*generado por chatgpt*/
+
+    /* Ocultar el menú por defecto en pantallas pequeñas */
+.menu {
+    display: none;
+    position: absolute;
+    top: 0px; /* Ajusta según la altura de tu barra de navegación */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Ajusta el color de fondo según tu diseño */
+    z-index: 1000; /* Asegúrate de que el menú se superponga sobre otros elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar el menú */
 }
 
-@media screen and (max-width: 992px) {
+.menu a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Ajusta el borde según tu diseño */
+}
+
+.icon {
+    z-index: 1001;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* Mostrar el menú cuando esté activo */
+.menu.active {
+    display: block;
+    z-index: 1001;
+    position: fixed;
+
+}
+
+
+/*final del generado por ia*/
+
+
+
+}
+
+@media screen and (min-width:577px) and (max-width: 992px) {
     .menu {
         flex-direction: column;
         align-items: flex-start;
     }
-    .icono img{
+
+    .icono img {
         position: fixed;
-        
+
     }
 
     .fa-shopping-cart:before {
@@ -422,9 +493,11 @@ main {
         top: 7%;
         left: 70%;
     }
+
     .topnav {
         flex-direction: column;
         align-items: flex-start;
+        height: 200px;
     }
 
     .contenedor-elegirnos {
@@ -434,7 +507,7 @@ main {
 
     .tarjeta-elegirnos {
         width: 370px;
-        height: 450px;    
+        height: 450px;
         margin: 20px 0;
     }
 
@@ -453,8 +526,8 @@ main {
         margin: 10px 0;
     }
 
-    
-    
+
+
     .slider-frame ul {
         width: 600%;
     }
@@ -1133,7 +1206,8 @@ menu li {
 
 .container-salon {
     display: flex;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
     background-color: #252525;
 }
 
@@ -1141,9 +1215,11 @@ menu li {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
-    width: 300px; /* Ajusta según sea necesario */
+    width: 300px;
+    /* Ajusta según sea necesario */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto y la imagen */
+    text-align: center;
+    /* Centra el texto y la imagen */
     background-color: rgb(68, 71, 87);
     display: grid;
     justify-content: space-around;
@@ -1152,13 +1228,15 @@ menu li {
 .img-salon {
     width: 100%;
     height: auto;
-    overflow: hidden; /* Oculta cualquier contenido que desborde */
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde */
 }
 
 .img-salon img {
     width: 100%;
     height: auto;
-    display: block; /* Asegura que la imagen se adapte al contenedor */
+    display: block;
+    /* Asegura que la imagen se adapte al contenedor */
 }
 
 .card img {

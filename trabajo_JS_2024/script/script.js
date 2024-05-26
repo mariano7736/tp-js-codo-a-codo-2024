@@ -442,3 +442,12 @@ class TextoAnimado {
 }
 
 new TextoAnimado('logo', 'logotipo');
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("icon-menu");
+    const menu = document.querySelector(".menu");
+
+    menuIcon.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
