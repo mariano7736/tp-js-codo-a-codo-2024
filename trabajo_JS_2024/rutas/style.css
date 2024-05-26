@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    background-color: #000;
     width: 100%;
     letter-spacing: 0.03em;
     line-height: 1.6;
@@ -99,6 +100,8 @@ body {
 
 
 @media screen and (max-width: 576px) {
+  
+    
     .topnav a:not(:first-child) {
         display: none;
     }
